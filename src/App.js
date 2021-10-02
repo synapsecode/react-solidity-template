@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import web3 from './web3';
+import React, { useState } from 'react';
+
+// Import all your Contract Interfaces
+import contract from './contracts/contract';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  if (web3 === undefined) {
+    return <h1>Web3 Provider not found. Please install MetaMask</h1>
+  } else {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Welcome to Web3 ⚡️</h1>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
