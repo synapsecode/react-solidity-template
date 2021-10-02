@@ -1,6 +1,6 @@
 # React + Solidity(Web3) Project Template
 
-The base project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The base project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and subsequently modified by me to create a template!
 
 ## Instructions
 - Compile your solidity code and deploy it to the ethereum network (Mainnet, Rinkeby, Ropsten etc)
